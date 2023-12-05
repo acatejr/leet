@@ -1,0 +1,45 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'the-leetcode-beginners-guide'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=the-leetcode-beginners-guide",
+                    "--package=the-leetcode-beginners-guide"
+                ],
+                "filter": {
+                    "name": "the-leetcode-beginners-guide",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'the-leetcode-beginners-guide'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=the-leetcode-beginners-guide",
+                    "--package=the-leetcode-beginners-guide"
+                ],
+                "filter": {
+                    "name": "the-leetcode-beginners-guide",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
